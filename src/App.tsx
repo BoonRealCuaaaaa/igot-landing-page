@@ -7,7 +7,6 @@ import WhoWeServe from "./components/WhoWeServe";
 import GridLayout from "./components/GridLayout";
 import BrandSection from "./components/BrandSection";
 import Footer from "./components/Footer";
-import GridLayoutHeader from "./components/GridLayoutHeader";
 
 export default function App() {
   return (
