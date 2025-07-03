@@ -13,10 +13,10 @@ const Card = ({ children, className = "" }: CardProps) => (
 
 export default function GridLayout() {
   return (
-    <>
+    <div className="bg-black">
       <GridLayoutHeader />
       <div className="w-[1262px] mx-auto">
-        <div className="grid auto-rows-[420px] grid-cols-3 gap-[2px] bg-[#1D2939]">
+        <div className="grid auto-rows-[420px] grid-cols-3 gap-[2px] bg-black">
           {/* Row 1, Col 1 - Multi-agent orchestration */}
           <Card className="bg-[#00E5FF] rounded-none flex flex-col justify-between relative overflow-hidden">
             <div className="absolute top-6 left-6">
@@ -177,6 +177,6 @@ export default function GridLayout() {
           </Card>
         </div>
       </div>
-    </>
+    </div>
   );
 }
