@@ -2,6 +2,16 @@ import type { ReactNode } from "react";
 import AnimatedStats from "./AnimatedStats";
 import GridLayoutHeader from "./GridLayoutHeader";
 
+// Import images
+import logo from "../assets/logo.png";
+import tekaproLogo from "../assets/tekapro.png";
+import naomiImage from "../assets/naomi-barake.jpg";
+import starBackground from "../assets/star-background.png";
+import saigonInnovation from "../assets/saigon-innovation.svg";
+import michaelImage from "../assets/michael-brown.jpg";
+import kiemToanImage from "../assets/kiem-toan.jpg";
+import qualcommLogo from "../assets/qualcom.png";
+
 interface CardProps {
   children: ReactNode;
   className?: string;
@@ -20,11 +30,7 @@ export default function GridLayout() {
           {/* Row 1, Col 1 - Multi-agent orchestration */}
           <Card className="bg-[#00E5FF] rounded-none flex flex-col justify-between relative overflow-hidden">
             <div className="absolute top-6 left-6">
-              <img
-                src="/src/assets/logo.png"
-                alt="Logo"
-                className="w-12 h-12 invert"
-              />
+              <img src={logo} alt="Logo" className="w-12 h-12 invert" />
             </div>
             <div className="p-8 mt-auto text-right">
               <h2 className="text-4xl font-bold text-black leading-tight mb-2">
@@ -46,7 +52,7 @@ export default function GridLayout() {
             <div className="h-full w-full flex items-center justify-center">
               <div className="w-[180px]">
                 <img
-                  src="/src/assets/tekapro.png"
+                  src={tekaproLogo}
                   alt="TecaPro"
                   className="w-full"
                   style={{ filter: "grayscale(100%)" }}
@@ -59,7 +65,7 @@ export default function GridLayout() {
           <Card className="bg-slate-800 rounded-none flex flex-col text-white relative overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="/src/assets/naomi-barake.jpg"
+                src={naomiImage}
                 alt="Naomi Bakare"
                 className="object-cover w-full h-full brightness-75"
               />
@@ -86,7 +92,7 @@ export default function GridLayout() {
           <Card className="bg-black rounded-none flex flex-col relative overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="/src/assets/star-background.png"
+                src={starBackground}
                 alt="Star Background"
                 className="object-cover w-full h-full opacity-60"
               />
@@ -97,13 +103,13 @@ export default function GridLayout() {
                 <div className="relative">
                   <div className="absolute inset-0">
                     <img
-                      src="/src/assets/saigon-innovation.svg"
+                      src={saigonInnovation}
                       alt=""
                       className="w-[180px] h-[72px] invert"
                     />
                   </div>
                   <img
-                    src="/src/assets/saigon-innovation.svg"
+                    src={saigonInnovation}
                     alt="Saigon Innovation Hub"
                     className="w-[180px] h-[72px] invert relative z-10"
                   />
@@ -128,9 +134,9 @@ export default function GridLayout() {
           <Card className="bg-slate-900 rounded-none p-6 flex flex-col text-white relative overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src="/src/assets/michael-brown.jpg"
+                src={michaelImage}
                 alt="Michael Brown"
-                className="object-cover  w-full h-full"
+                className="object-cover w-full h-full"
               />
             </div>
             <div className="relative z-10 h-full flex flex-col justify-between">
@@ -154,7 +160,7 @@ export default function GridLayout() {
             </div>
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="/src/assets/kiem-toan.jpg"
+                src={kiemToanImage}
                 alt="State Audit of Vietnam"
                 className="w-[108px] h-[108px] object-contain"
                 style={{ filter: "grayscale(100%)" }}
@@ -169,7 +175,7 @@ export default function GridLayout() {
             </div>
             <div className="flex-1 flex items-center justify-center">
               <img
-                src="/src/assets/qualcom.png"
+                src={qualcommLogo}
                 alt="Qualcomm Vietnam Innovation Challenge"
                 className="w-[180px] h-[72px] object-contain"
               />
